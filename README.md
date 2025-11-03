@@ -1,97 +1,58 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# The Amplifier
 
-# Getting Started
+**Platform:** React Native (Expo)  
+**Category:** Educational / Interactive Game  
+**Author:** Ansley Rodrigues  
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## Overview
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+**The Amplifier** is an interactive mobile game that teaches the concept of **positive feedback loops**. Players manage a central Orb's *Echo Strength (ES)* by tapping to amplify it while avoiding critical overload or decay. The game demonstrates how consistent input can drive growth, and how uncontrolled amplification can lead to system collapse.
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## In-game Screenshots
 
-```sh
-# Using npm
-npm start
+<img width="508" height="1414" alt="Screenshot 2025-11-03 at 4 30 40 PM" src="https://github.com/user-attachments/assets/b5f63eb2-a1ce-4268-b55b-19b0d26d0fe4" />
 
-# OR using Yarn
-yarn start
-```
+<img width="463" height="1418" alt="Screenshot 2025-11-03 at 4 33 52 PM" src="https://github.com/user-attachments/assets/08f28fe8-fb22-4384-b057-0749e4da7c75" />
 
-## Step 2: Build and run your app
+---
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+## Gameplay
 
-### Android
+### Objective
+- Reach a target **Echo Strength range** (e.g., 100–150 ES) without exceeding the critical threshold (e.g., 200 ES).  
+- Maintain consistent input to prevent decay below a minimum threshold.
 
-```sh
-# Using npm
-npm run android
+### Core Mechanics
+- **Tap the Orb** to increase ES.
+- Each tap **multiplies ES** by a fixed amplification factor (e.g., 1.2x).  
+- Orb visually **grows and brightens** as ES increases.  
+- **Audio cues** reinforce player actions:
+  - Ascending tones with each tap
+  - Positive chime at target range
+  - Shattering sound on overload
+  - Fading tone on decay
 
-# OR using Yarn
-yarn android
-```
+### Win/Lose Conditions
+- **Win:** Reach and maintain the target ES range.  
+- **Fail - Overload:** ES exceeds critical threshold → Orb shatters.  
+- **Fail - Decay (Optional):** ES falls below minimum threshold → Echo fades.
 
-### iOS
+---
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+## Features
+- Minimalist and clean UI focusing on the central Orb.
+- Dynamic visual feedback: size, brightness, and color changes.
+- Responsive audio feedback for actions and outcomes.
+- Real-time ES display and player notifications.
+- Mobile-optimized for smooth gameplay on iOS and Android.
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+---
 
-```sh
-bundle install
-```
+## Installation & Running
 
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+1. **Clone the repository**
+```bash
+git clone <repository-url>
+cd The-Amplifier
